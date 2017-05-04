@@ -1,19 +1,14 @@
-- name: Software Engineer Keywords
+- name: 开发语言类
   keywords:
       - Java
-      - C++
-      - Python
-      - Design Patterns
+      - golang
+      - lua
 
-- name: Mobile Developer Keywords
+- name: 技能架构类
   keywords:
-      - Android
-      - Reverse Engineering
+      - Lucene、Solr、ElasticSearch
+      - Netty
+      - Vert.x
+      - Beego
+      - OpenResty
 
-- name: Windows Developer Keywords
-  keywords:
-      - Win32 SDK
-      - DuiLib
-      - WTL
-      - COM
-      - WinDbg
