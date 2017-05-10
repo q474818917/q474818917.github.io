@@ -67,7 +67,7 @@ http GET http://httpbin.org/ip
 		```
 			{
 			    "args": {},
-			    "data": "{\n\"name\":\"王振兴\",\n\"city\":\"sh\"\n}\n",
+			    "data": "{\n\"name\":\"123\",\n\"city\":\"sh\"\n}\n",
 			    "files": {},
 			    "form": {},
 			    "headers": {
@@ -81,7 +81,7 @@ http GET http://httpbin.org/ip
 			    },
 			    "json": {
 			        "city": "sh",
-			        "name": "王振兴"
+			        "name": "123"
 			    },
 			    "origin": "116.231.142.172",
 			    "url": "http://httpbin.org/post"
