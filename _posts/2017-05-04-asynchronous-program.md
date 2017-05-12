@@ -80,5 +80,21 @@ futureA.thenCombine(futureB, (x, y) -> {
 + RxJava
 
 ```
+JDBCClient client = JDBCClient.createShared(vertx, config);
+client.getConnectionObservable().subscribe(conn -> {
+    Observable<ResultSet> rs1 =  conn.queryObservable("select id from t_user where mobilephone = 17000107708");
+    Observable<ResultSet> rs2 = conn.queryObservable("select id from t_user where mobilephone = 15110119364");
 
+    Observable
+            .merge(rs1, rs2)                    
+            .map(ResultSet::getRows)            //数据转换
+            .subscribe(System.out::println);    //数据消费
+    /*rs.subscribe(resultSet -> {
+        System.out.println("Results : " + resultSet.getRows());
+    }, err -> {
+        System.out.println("Database problem");
+        err.printStackTrace();
+    }, conn::close);*/
+
+});
 ```
