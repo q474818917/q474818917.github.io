@@ -98,3 +98,11 @@ client.getConnectionObservable().subscribe(conn -> {
 
 });
 ```
+
+### 京东案例
+
++ 京东详情页、列表页使用openresty，将页面的请求直接引导到nginx上，而不需要backend service，这样使用的作用，仅仅是
+利用nginx的并发连接数，官方声称，nginx单点可达5W个连接。
+
++ nginx使用异步回调、事件驱动epoll模型，详情页瓶颈还在于io，这里可使用nosql，当nosql不可用时，将流量打到数据库。
+
