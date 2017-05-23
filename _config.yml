@@ -5,8 +5,8 @@ baseurl:
 url: http://github.com/q474818917
 date_format: "ordinal"
 title: altas 
-subtitle: "任何一门学科深入之后都很枯燥"
-description: "任何一门学科深入之后都很枯燥"
+subtitle: "从nlp到高并发"
+description: "从nlp到高并发"
 keywords: Java, golang, vertx, q474818917
 favicon: /favicon.ico
 timezone: Asia/Shanghai

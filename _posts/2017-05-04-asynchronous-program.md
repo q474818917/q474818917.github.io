@@ -8,7 +8,7 @@ keywords: CompletableFuture、Vertx
 
 ### 异步编程几种方式
 + 类似于Golang、lua语言中的协程
-+ 类似于NodeJs中的异步无阻塞的事件驱动
++ 类似于NodeJs中的异步无阻塞的事件驱动,但不能利用cpu的多核处理
 + java中并发处理方案：
     + 多线程
     + 协程Quasar
