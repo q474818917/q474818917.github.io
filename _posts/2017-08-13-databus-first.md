@@ -19,6 +19,7 @@ keywords: Databus、mysql、binlog、elasticsearch
 
 ## Databus架构图
 	类似于Search Index及Read Replica这些作为Databus的Consumer（类节点）使用的将是Client Library（客户端库）。当对一个主OLTP数据库做写操作时，连接了这个数据库的Relay们将会把改变存入Relay中；Databus这些被嵌入内存或者索引的Consumer将会把它从Relay或Bootstrap（引导程序）中取出，并且根据情况修改索引或者缓存，这就做到了根据源数据库的状态实时的更新索引。
+	
 ![](http://cms.csdnimg.cn/article/201302/27/512da48083705.jpg)
 
 ## Databus Demo
