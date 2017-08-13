@@ -6,6 +6,8 @@ description: 基于Kong的Auth2.0的设计
 keywords: openresty、lua、kong、nginx
 ---
 
+# Kong
+
 ## 关于短信防刷机制
 
 + 通过图形验证码解决，每次发送短信验证码都需要请求一次图形验证码接口，使用完成后，将本次请求的图形验证码删除
